@@ -47,6 +47,13 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        scanner: {
+          glow: "hsl(var(--scanner-glow))",
+          secondary: "hsl(var(--scanner-secondary))",
+          success: "hsl(var(--scanner-success))",
+          warning: "hsl(var(--scanner-warning))",
+          error: "hsl(var(--scanner-error))",
+        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
