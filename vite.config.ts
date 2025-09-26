@@ -8,10 +8,10 @@ export default defineConfig(({ mode, command }) => ({
     host: "::",
     port: 8080,
   },
-  //plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
-  plugins: [react()],
-  //base: "/webcam-qr-scan",
-  base: command === "build" ? "/webcam-qr-scan" : "/",
+  plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
+  //plugins: [react()],
+  base: "/webcam-qr-scan",
+  //base: command === "build" ? "/webcam-qr-scan" : "/",
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
