@@ -8,7 +8,8 @@ export default defineConfig(({ mode, command }) => ({
     host: "::",
     port: 8080,
   },
-  plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
+  //plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
+  plugins: [react()],
   base: "/webcam-qr-scan",
   resolve: {
     alias: {
