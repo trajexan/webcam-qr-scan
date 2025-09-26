@@ -10,7 +10,8 @@ export default defineConfig(({ mode, command }) => ({
   },
   //plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
   plugins: [react()],
-  base: "/webcam-qr-scan",
+  //base: "/webcam-qr-scan",
+  base: command === "build" ? "/webcam-qr-scan" : "/",
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
