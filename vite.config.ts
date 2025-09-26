@@ -9,11 +9,12 @@ export default defineConfig(({ mode, command }) => ({
     port: 8080,
   },
   plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
+  base: "/webcam-qr-scan",
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
     },
   },
   // Conditional base: empty for dev, "/webcam-qr-scan" for build
-  base: command === "build" ? "/webcam-qr-scan" : "/",
+  //base: command === "build" ? "/webcam-qr-scan" : "/",
 }));
